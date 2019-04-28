@@ -6,8 +6,7 @@ date: 2019-04-28
 
 I'm Vaibhav Yenamandra and this is my (revived) blog.
 
-I'm was a Comptuer Science Masters student at the University of Florida,
-I work for Bloomberg L.P. as a software engineer on the Static Analysis and Automated Refactoring Team now.
+I work for Bloomberg L.P. as a software engineer on the Static Analysis and Automated Refactoring Team.
 
 
 I'd add a reassuring picture to convince you I am not an AI, but I don't have one right now, so you'll have to take my word for it.
@@ -21,7 +20,7 @@ If you like what you read, or have something constructive to say, feel free to l
 
 
 This blog was built using [Hugo](http://gohugo.io/), and the theme I use is a
-fork of the [Terminal Theme](https://themes.gohugo.io/hugo-theme-terminal/)
+[fork](https://github.com/vaibhav-y/hugo-theme-terminal) of the [Terminal Theme](https://themes.gohugo.io/hugo-theme-terminal/)
 by [panr](https://themes.gohugo.io/hugo-theme-terminal/)
 
 Also, you should know that:
