@@ -1,6 +1,8 @@
 [submodule "themes/terminal"]
 	path = themes/terminal
-	url = https://github.com/panr/hugo-theme-terminal.git
+	url = https://github.com/vaibhav-y/hugo-theme-terminal.git
+	branch = "patches-calloc"
+
 [submodule "content/posts"]
 	path = content/posts
 	url = https://github.com/vaibhav-y/blog.git
