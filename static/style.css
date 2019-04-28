@@ -1,0 +1,41 @@
+.header__logo::after {
+  background: repeating-linear-gradient(
+    90deg,#FF6266,#FF6266 2px,transparent 0,transparent 10px);
+}
+
+
+body {
+  font-family: 'Roboto Mono';
+}
+
+code {
+  font-family: 'Roboto Mono'
+}
+
+/* Structural overrides if the viewport is screen and 800px wide */
+@media only screen and (min-width: 800px) {
+  .post.on-list {
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .post.on-list > h1, .post.on-list > .post-meta {
+    display: inline-block;
+  }
+
+  .post-meta {
+    text-align: right;
+  }
+
+  .posts {
+    width: 100%;
+  }
+}
+.footer__inner {
+  width: auto;
+}
+
+.footer .copyright--user {
+  margin: 0;
+}
