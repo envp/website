@@ -1,15 +1,16 @@
+.header__logo {
+  font-size: 1.2rem;
+}
+
 .header__logo::after {
   background: repeating-linear-gradient(
     90deg,#FF6266,#FF6266 2px,transparent 0,transparent 10px);
 }
 
-.header__logo {
-  font-size: 1rem;
-}
-
 body {
   font-family: 'Roboto Mono', monospace;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  line-height: 2;
 }
 
 code {
@@ -21,13 +22,12 @@ h1, h2, h3 {
   font-size: 1.2rem;
 }
 
-/* Adjust somewhat proportionally because we adjusted the font-size */
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
-}
-
 /* Structural overrides if the viewport is screen and at-least 800px wide */
 @media only screen and (min-width: 800px) {
+  body {
+    max-width: 80%;
+    margin: 0 auto;
+  }
   /* Make childern of .post.on-list appear on the sam line */
   .post.on-list {
     white-space: nowrap;
@@ -35,7 +35,8 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
   }
 
-  .post.on-list > h1, .post.on-list > .post-meta {
+  .post.on-list > h1,
+  .post.on-list > .post-meta {
     display: inline-block;
   }
 
@@ -43,7 +44,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: right;
   }
 
-  /* There was a net 40px */
   .posts {
     width: 100%;
     padding: 40px
@@ -63,8 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-
-/* Color the previous (red) and next(green) buttons*/
+/* Color the previous (red) and next(green) buttons */
 span.button.previous > a {
   background: #FF6266;
 }
@@ -72,4 +71,18 @@ span.button.previous > a {
 span.button.next > a{
   background: var(--accent);
   color: black;
+}
+
+/* But invert this coloring for /posts/* (next is red, prev is green)  */
+span.button.previous > a[href^="/page/"],
+span.button.previous > a[href="/"],
+span.button.previous > a[href^="/posts/page/"],
+span.button.previous > a[href="/posts/"] {
+  background: var(--accent);
+  color: black;
+}
+
+span.button.next > a[href^="/page/"],
+span.button.next > a[href^="/posts/page/"] {
+  background: #FF6266;
 }

@@ -1,6 +1,29 @@
 ---
 title: What's this all about?
 published: true
+date: 2019-04-28
 ---
 
-Hello there humans
+I'm Vaibhav Yenamandra and this is my (revived) blog.
+
+I'm was a Comptuer Science Masters student at the University of Florida,
+I work for Bloomberg L.P. as a software engineer on the Static Analysis and Automated Refactoring Team now.
+
+
+I'd add a reassuring picture to convince you I am not an AI, but I don't have one right now, so you'll have to take my word for it.
+
+There's a lot I need to learn, and this page might help me speed up the process.
+How? Through essays on technical and life challenges I face so I can refer to them later.
+Sometimes these will be articles about tech, sometimes about dealing with life, or just rants.
+
+
+If you like what you read, or have something constructive to say, feel free to leave a comment!
+
+
+This blog was built using [Hugo](http://gohugo.io/), and the theme I use is a
+fork of the [Terminal Theme](https://themes.gohugo.io/hugo-theme-terminal/)
+by [panr](https://themes.gohugo.io/hugo-theme-terminal/)
+
+Also, you should know that:
+
+> All opinions expressed here are solely my own and do not express the views or opinions of my employer
