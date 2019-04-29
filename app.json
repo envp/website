@@ -1,7 +1,0 @@
-{
-    "scripts": {
-      "dokku": {
-        "predeploy": "cd /app/www && mkdir output && pelican ./content -o ./output -s ./publishconf.py"
-      }
-    }
-  }
