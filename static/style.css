@@ -29,14 +29,14 @@ h1, h2, h3 {
     margin: 0 auto;
   }
   /* Make childern of .post.on-list appear on the sam line */
-  .post.on-list {
+  .post-first-row {
     white-space: nowrap;
     display: flex;
     justify-content: space-between;
   }
 
-  .post.on-list > h1,
-  .post.on-list > .post-meta {
+  .post-first-row > h1,
+  .post-first-row > .post-meta {
     display: inline-block;
   }
 
