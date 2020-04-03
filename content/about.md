@@ -4,6 +4,8 @@ published: true
 date: 2019-04-28
 ---
 
+> All opinions expressed here are solely my own and do not express the views or opinions of my employer
+
 I'm Vaibhav Yenamandra and this is my (revived) blog.
 
 I work for Bloomberg L.P. as a software engineer on the Static Analysis and Automated Refactoring Team.
@@ -19,10 +21,3 @@ Sometimes these will be articles about tech, sometimes about dealing with life, 
 If you like what you read, or have something constructive to say, feel free to leave a comment!
 
 
-This blog was built using [Hugo](http://gohugo.io/), and the theme I use is a
-[fork](https://github.com/vaibhav-y/hugo-theme-terminal) of the [Terminal Theme](https://themes.gohugo.io/hugo-theme-terminal/)
-by [panr](https://themes.gohugo.io/hugo-theme-terminal/)
-
-Also, you should know that:
-
-> All opinions expressed here are solely my own and do not express the views or opinions of my employer
