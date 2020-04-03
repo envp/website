@@ -16,7 +16,8 @@ imaging:
   quality: 99
 
 params:
-  description: Insatiably curious
+  description: |
+    <h3>Infinitely** Curious</h3>
   homeMetaContent: Vaibhav Yenamandra's blogspace
   footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).
   # For more date formats see https://gohugo.io/functions/format/
