@@ -1,0 +1,12 @@
+div.main-and-footer {
+  height: 100vh;
+}
+
+div.main-and-footer > div > main#main {
+  min-height: auto;
+}
+
+div.main-and-footer > div > footer {
+  position: absolute;
+  bottom: 0;
+}
