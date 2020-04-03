@@ -3,5 +3,5 @@
 	url = https://github.com/envp/blog.git
 [submodule "themes/cupper-hugo-theme"]
 	path = themes/cupper-hugo-theme
-	url = git@github.com:envp/cupper-hugo-theme.git
+	url = https://github.com/envp/cupper-hugo-theme.git
 	branch = envp/patched
