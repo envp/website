@@ -46,3 +46,19 @@ code[class*="language-"], pre[class*="language-"] {
 p {
   text-align: justify;
 }
+
+
+/**
+ * Get rid of the vertical scrollbars that exist by default
+ */
+.main-and-footer {
+  min-height: 100vh;
+}
+
+.main-and-footer > div {
+  height: 100%;
+}
+
+main {
+  min-height: unset;
+}
