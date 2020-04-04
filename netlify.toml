@@ -28,3 +28,11 @@ HUGO_VERSION = "0.68.3"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
+
+[[redirects]]
+  from = "/resume"
+  to = "https://drive.google.com/file/d/1KYlj9FEEBRzQz2026i_Id0rC13HD2Msy/view?usp=sharing"
+  force = true
+  # Status of 200 is interpreted as 'Rewrite' (wrt htaccess lingua)
+  status = 200
+  headers = {X-From = "Netlify"}
