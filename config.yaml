@@ -19,7 +19,7 @@ params:
   description: |
     <h3>Infinitely** Curious</h3>
   homeMetaContent: Vaibhav Yenamandra's blogspace
-  footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Netlify](https://www.netlify.com/).
+  footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme)
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat: Jan 2, 2006
   katex: true
@@ -36,10 +36,10 @@ menu:
       url: /tags/
       weight: 3
     - name: About
-      url: /about/
+      url: /about
       weight: 4
     - name: Resume
-      url: /
+      url: /resume
       weight: 5
     - name: RSS
       url: /index.xml
@@ -48,6 +48,7 @@ menu:
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:
+    hrefTargetBlank: true
     extensions:
       definitionList: true
       footnote: true
