@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="container">
+
+<main id="article-index">
+  <section class="article-list">
+    {{ range (where (where .Site.RegularPages "Section" "post") "Params.nohtml" "!=" "true") }}
+    <article>
+      <span class="date">{{.Date.Format "2006-01-02"}}</span>
+      <a class="title-link" href="{{.Permalink}}">{{.Title}}</a>
+    </article>
+    {{ end }}
+  </section>
+</main>
+
+</div>
+{{ end }}

@@ -1,7 +1,6 @@
 [submodule "content/posts"]
 	path = content/post
 	url = https://github.com/envp/blog.git
-[submodule "themes/cupper-hugo-theme"]
-	path = themes/cupper-hugo-theme
-	url = https://github.com/envp/cupper-hugo-theme.git
-	branch = envp/patched
+[submodule "themes/researcher"]
+	path = themes/researcher
+	url = https://github.com/ojroques/hugo-researcher.git
