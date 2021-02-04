@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vaibhav Yenamandra</title>
+    <link>https://calloc.net/</link>
+    <description>Recent content on Vaibhav Yenamandra</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://calloc.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What&#39;s this all about?</title>
+      <link>https://calloc.net/about/</link>
+      <pubDate>Sun, 28 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://calloc.net/about/</guid>
+      <description>All opinions expressed here are solely my own and do not express the views or opinions of my employer
+ I&amp;rsquo;m Vaibhav Yenamandra and this is my (revived) blog.
+I work for Bloomberg L.P. as a software engineer on the Static Analysis and Automated Refactoring Team.
+I&amp;rsquo;d add a reassuring picture to convince you I am not an AI, but I don&amp;rsquo;t have one right now, so you&amp;rsquo;ll have to take my word for it.</description>
+    </item>
+    
+  </channel>
+</rss>

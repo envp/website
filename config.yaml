@@ -1,77 +1,36 @@
-baseURL: https://calloc.net
+title: Vaibhav Yenamandra's Blog
 languageCode: en-us
 defaultContentLanguage: en
-title: Vaibhav Yenamandra
-theme: cupper-hugo-theme
-DisqusShortname: tinmanbattleplan
-enableGitInfo: true
-
-taxonomies:
-  tag: tags
-
-permalinks:
-  post: /:filename
-
-imaging:
-  quality: 99
-
+baseURL: 'https://calloc.net'
+theme: researcher
+disableKinds:
+  - taxonomy
+  - term
+enableEmoji: true
+math: true
 params:
-  description: |
-    <h3>Infinitely** Curious</h3>
-  homeMetaContent: Vaibhav Yenamandra's blogspace
-  # For more date formats see https://gohugo.io/functions/format/
-  dateFormat: Jan 2, 2006
-  katex: true
-
+  favicon: favicon.ico
+  style:
+    fontFamily: Inconsolata
+    pageWidth: 750px
+    avatarSize: 90px
+    colorBlack: '#222222'
+    colorRed: '#dc3545'
+permalinks:
+  /: '/:filename'
 menu:
-  nav:
-    - name: Home
-      url: /
-      weight: 1
-    - name: Blog
-      url: /post/
-      weight: 2
-    - name: Tags
-      url: /tags/
-      weight: 3
+  main:
     - name: About
       url: /about
-      weight: 4
+      weight: 1
     - name: Resume
-      url: /resume
-      weight: 5
-    - name: RSS
-      url: /index.xml
-      weight: 5
-
+      url: /resume.pdf
+      weight: 2
+    - name: Contact
+      url: /contact
+      weight: 3
 markup:
-  defaultMarkdownHandler: goldmark
   goldmark:
-    hrefTargetBlank: true
-    extensions:
-      definitionList: true
-      footnote: true
-      linkify: true
-      strikethrough: true
-      table: true
-      taskList: true
-      typographer: true
-    parser:
-      attribute: true
-      autoHeadingID: true
     renderer:
-      hardWraps: false
       unsafe: true
-      xHTML: false
-  highlight:
-    codeFences: false
-    hl_Lines: ""
-    lineNoStart: 1
-    lineNos: false
-    lineNumbersInTable: true
-    noClasses: true
-    style: monokai
-    tabWidth: 4
-  tableOfContents:
-    endLevel: 6
-    startLevel: 2
+
