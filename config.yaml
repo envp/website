@@ -11,7 +11,7 @@ math: true
 params:
   favicon: favicon.ico
   style:
-    fontFamily: Iosevka
+    fontFamily: 'JetBrains Mono'
     pageWidth: 750px
     avatarSize: 90px
     colorBlack: '#222222'
@@ -26,9 +26,6 @@ menu:
     - name: Resume
       url: https://drive.google.com/file/d/1KYlj9FEEBRzQz2026i_Id0rC13HD2Msy/view?usp=sharing
       weight: 2
-    - name: Contact
-      url: /contact
-      weight: 3
 markup:
   goldmark:
     renderer:
