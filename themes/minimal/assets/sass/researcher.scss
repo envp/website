@@ -8,10 +8,11 @@ $red: {{ .Param "style.colorRed" | default "#dc3545" }};
 
 // Font
 $font-family: {{ .Param "style.fontFamily" | default "Inconsolata" }};
+$font-size: {{ .Param "style.fontSize" | default "1rem" }};
 
 // Margins
-$y-small: 0.6rem;
-$y-medium: 1.0rem;
+$y-small: $font-size * 0.5;
+$y-medium: $font-size * 0.8;
 
 // Placeholders
 %link-default {
@@ -46,7 +47,6 @@ $y-medium: 1.0rem;
 * {
     color: $black;
     font-family: $font-family;
-    line-height: 1.2;
 }
 .container {
     max-width: $max-width;
@@ -124,7 +124,7 @@ $y-medium: 1.0rem;
         border-left: 4px solid;
         font-style: italic;
         margin: $y-medium 0;
-        padding: 8px 8px;
+        padding: 20px 20px;
     }
     code {
         color: $black;
