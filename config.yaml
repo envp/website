@@ -2,7 +2,7 @@ title: Vaibhav Yenamandra's Blog
 languageCode: en-us
 defaultContentLanguage: en
 baseURL: 'https://calloc.net'
-theme: researcher
+theme: minimal
 disableKinds:
   - taxonomy
   - term
