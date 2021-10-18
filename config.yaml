@@ -2,7 +2,7 @@ title: Vaibhav Yenamandra's Blog
 languageCode: en-us
 defaultContentLanguage: en
 baseURL: 'https://calloc.net'
-theme: researcher
+theme: minimal
 disableKinds:
   - taxonomy
   - term
@@ -11,9 +11,9 @@ math: true
 params:
   favicon: favicon.ico
   style:
-    fontFamily: Inconsolata
-    pageWidth: 750px
-    avatarSize: 90px
+    fontFamily: JetBrains Mono
+    fontSize: 1rem
+    pageWidth: 90%
     colorBlack: '#222222'
     colorRed: '#dc3545'
 permalinks:
