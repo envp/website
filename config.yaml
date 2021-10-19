@@ -11,7 +11,7 @@ math: true
 params:
   favicon: favicon.ico
   style:
-    fontFamily: JetBrains Mono
+    fontFamily: Inconsolata
     fontSize: 1rem
     pageWidth: 90%
     colorBlack: '#222222'
