@@ -1,33 +1,23 @@
 title: Vaibhav Yenamandra's Blog
 languageCode: en-us
 defaultContentLanguage: en
-baseURL: 'https://calloc.net'
-theme: minimal
-disableKinds:
-  - taxonomy
-  - term
-enableEmoji: true
+baseURL: 'https://calloc.net/'
+theme: xmin
 math: true
 params:
   favicon: favicon.ico
-  style:
-    fontFamily: Inconsolata
-    fontSize: 1rem
-    pageWidth: 90%
-    colorBlack: '#222222'
-    colorRed: '#dc3545'
-permalinks:
-  /: '/:filename'
 menu:
   main:
+    - name: Home
+      url: /
+      weight: 1
     - name: About
       url: /about
-      weight: 1
-    - name: Resume
-      url: https://drive.google.com/file/d/1KYlj9FEEBRzQz2026i_Id0rC13HD2Msy/view?usp=sharing
       weight: 2
+
 markup:
+  highlight:
+    codeFences: false
   goldmark:
     renderer:
       unsafe: true
-
