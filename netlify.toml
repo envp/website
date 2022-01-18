@@ -24,15 +24,14 @@ HUGO_VERSION = "0.68.3"
 command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy.environment]
-HUGO_VERSION = "0.68.3"
+HUGO_VERSION = "0.88.0"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
 
 [[redirects]]
   from = "/resume"
-  to = "https://drive.google.com/file/d/1KYlj9FEEBRzQz2026i_Id0rC13HD2Msy/view?usp=sharing"
+  to = "/resume.pdf"
   force = true
   # Status of 200 is interpreted as 'Rewrite' (wrt htaccess lingua)
-  status = 200
-  headers = {X-From = "Netlify"}
+  status = 302
