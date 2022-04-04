@@ -8,3 +8,8 @@ pre {
   border: 1px solid #eee;
   border-radius: 5px;
 }
+
+.menu li:after {
+    content: " ";
+    white-space: pre;
+}
