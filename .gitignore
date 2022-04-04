@@ -12,3 +12,7 @@ $RECYCLE.BIN/
 .travis/*.key
 .travis/*.key.pub
 .env
+
+# hugo specific
+/public
+/resources
