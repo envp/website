@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>https://calloc.net/about/</loc>
-    <lastmod>2020-04-03T20:58:24-04:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://calloc.net/categories/</loc>
+  </url><url>
     <loc>https://calloc.net/tags/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://calloc.net/</loc>
-    <lastmod>2020-04-03T20:58:24-04:00</lastmod>
   </url>
-  
 </urlset>
