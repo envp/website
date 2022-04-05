@@ -20,7 +20,8 @@ menu:
 
 markup:
   highlight:
-    codeFences: false
+    codeFences: true
+    style: friendly
   goldmark:
     renderer:
       unsafe: true
