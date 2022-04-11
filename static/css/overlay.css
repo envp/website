@@ -12,3 +12,11 @@ pre {
     content: " ";
     white-space: pre;
 }
+
+.article-meta h1 {
+    font-size: 1.8em;
+}
+
+.article-meta h2 {
+    font-size: 1.2em;
+}
