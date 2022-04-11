@@ -16,3 +16,4 @@ $RECYCLE.BIN/
 # hugo specific
 /public
 /resources
+.hugo_build.lock
