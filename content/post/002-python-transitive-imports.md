@@ -142,11 +142,10 @@ AttributeError: module 'urllib' has no attribute 'request
 
 <p align="center"><img src="/images/watman.jpg"></p>
 
-Ah-ha! So it was a transitive import
+Ah-ha! So it was a transitive import that gave us both `urllib` and
+`urllib.request`!
 
-It gives us both `urllib` and `urllib.request`!
-
-Of course we still need to import `urllib` to use either of them.
+Of course we still needed to import `urllib` to use either of them.
 
 
 I'm not sure if this is a bug or not, but certainly appears to be one because
