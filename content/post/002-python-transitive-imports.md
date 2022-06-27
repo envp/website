@@ -3,7 +3,7 @@ title: Fun with Imports in Python
 date: 2022-06-26T23:53:17-04:00
 slug: python-transitive-imports
 toc: true
-draft: true
+published: true
 categories: ["wat"]
 ---
 
