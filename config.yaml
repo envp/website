@@ -17,7 +17,11 @@ menu:
     - name: Résumé
       url: /resume.pdf
       weight: 3
-
+    - name: Categories
+      url: "categories/"
+      weight: 4
+    - name: RSS Feed
+      url: "index.xml"
 markup:
   highlight:
     codeFences: true
