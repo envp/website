@@ -137,7 +137,7 @@ Traceback (most recent call last):
 AttributeError: module 'urllib' has no attribute 'request
 >>> import urllib
 >>> urllib.request.urlretrieve("https://example.com")
-('/var/folders/hg/5ssd2ym174j3k9tth123pxpc0000gn/T/tmpoaxj7otp', <http.client.HTTPMessage object at 0x102e97070>
+('/var/folders/...', <http.client.HTTPMessage object at 0x102e97070>
 ```
 
 <p align="center"><img src="/images/watman.jpg"></p>
