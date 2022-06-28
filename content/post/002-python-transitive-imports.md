@@ -157,9 +157,6 @@ if I haven't explicitly imported it!
 
 <p align="center"><img src="/images/watman.jpg"></p>
 
-Ah-ha! So it was a transitive import that gave us both `urllib` and
-`urllib.request`!
-
 I'm not sure if this interaction is a bug or not, but certainly appears to be
 one because Python checked for a cache hit in `sys.modules` without verifying if
 the module which imported `urllib.request` was the current module.
