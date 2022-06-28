@@ -7,8 +7,6 @@ published: true
 categories: ["wat"]
 ---
 
-## Why does this work?
-
 A few days ago one of my coworkers asked about why this innocent looking code
 snippet worked at all:
 
@@ -54,7 +52,7 @@ interest. It worked.
 That rules out any weirdness I talked about before.
 
 
-## How do Python imports even work
+## Aside: How do Python imports work
 
 Link to [docs][import-system] for the curious.
 
@@ -76,6 +74,8 @@ And finally:
 
 > The first place checked during import search is [`sys.modules`](https://docs.python.org/3.9/library/sys.html#sys.modules).
 
+
+## Diagnosing the problem
 
 Lets pull up our troublesome snippet again:
 
@@ -118,10 +118,10 @@ True
 ```
 So far, so good. Importing `urllib` puts it in `sys.modules`. Totally reasonable.
 
+Let's enter a fresh REPL session:
 
 ```python
->>> # Remove it forcefully so we can see if it gets imported again.
->>> del sys.modules['urllib']
+>>> import sys
 >>> 'urllib' in sys.modules
 False
 >>> import thing
@@ -131,10 +131,25 @@ False
 True
 >>> 'urllib.request' in sys.modules
 True
+```
+
+Nothing weird so far, importing a package (`thing`) updates `sys.modules`.
+Sometimes more than one things get added, as is the case above.
+
+If we try to call `urllib.request.urlretreieve` now, it won't work despite
+both `urllib` and `urllib.request` being in module cache.
+
+```python
 >>> urllib.request.urlretrieve("https://example.com")
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 AttributeError: module 'urllib' has no attribute 'request
+```
+
+Now if I import `urllib` I can use use `urllib.request` all of a sudden, even
+if I haven't explicitly imported it!
+
+```python
 >>> import urllib
 >>> urllib.request.urlretrieve("https://example.com")
 ('/var/folders/...', <http.client.HTTPMessage object at 0x102e97070>
@@ -145,11 +160,8 @@ AttributeError: module 'urllib' has no attribute 'request
 Ah-ha! So it was a transitive import that gave us both `urllib` and
 `urllib.request`!
 
-Of course we still needed to import `urllib` to use either of them.
-
-
-I'm not sure if this is a bug or not, but certainly appears to be one because
-Python checked for a cache hit in `sys.modules` without verifying if the module
-which imported `urllib.request` was the current module.
+I'm not sure if this interaction is a bug or not, but certainly appears to be
+one because Python checked for a cache hit in `sys.modules` without verifying if
+the module which imported `urllib.request` was the current module.
 
 [import-system]: https://docs.python.org/3.9/reference/import.html#the-import-system
