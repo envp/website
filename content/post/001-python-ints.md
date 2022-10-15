@@ -2,7 +2,7 @@
 title: Why Are Python Integers 28 Bytes Wide?
 date: 2022-10-10T13:28:57-04:00
 categories: ["python", "c", "low-level", "internals"]
-slug: 001-python-ints
+slug: sizeof-python-integers
 toc: true
 published: true
 ---
